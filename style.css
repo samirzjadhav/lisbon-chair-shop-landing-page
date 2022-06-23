@@ -7,6 +7,16 @@ FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
 
+:root {
+  --clr-white-100: #fff;
+  --clr-green-100: #e6fcf5;
+  --clr-green-200: #c3fae8;
+  --clr-green-400: #087f5b;
+  --clr-green-300: #099268;
+  --clr-gray-100: #343a40;
+  --clr-gray-200: #495057;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -17,8 +27,10 @@ FONT SIZE SYSTEM (px)
 
 body {
   font-family: "Inter", sans-serif;
-  color: #343a40;
-  border-bottom: 8px solid #087f5b;
+  /* color: #343a40; */
+  color: var(--clr-gray-100);
+  border-radius: 8px solid var(--clr-green-400);
+  /* border-bottom: 8px solid #087f5b; */
   /* font-family: "Roboto", sans-serif; */
 }
 
@@ -46,8 +58,10 @@ h2 {
 
 .btn:link,
 .btn:visited {
-  background-color: #087f5b;
-  color: #fff;
+  background-color: var(--clr-green-400);
+  /* background-color: #087f5b; */
+  /* color: #fff; */
+  color: var(--clr-white-100);
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -56,7 +70,8 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #099268;
+  /* background-color: #099268; */
+  background-color: var(--clr-green-300);
 }
 
 .btn--big {
@@ -104,7 +119,8 @@ img {
 
 /* FEATURES */
 .features-icon {
-  stroke: #087f5b;
+  /* stroke: #087f5b; */
+  stroke: var(--clr-green-400);
   width: 32px;
   height: 32px;
   margin-bottom: 24px;
@@ -122,8 +138,10 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
-  background-color: #087f5b;
-  color: #fff;
+  background-color: var(--clr-green-400);
+  /* background-color: #087f5b; */
+  /* color: #fff; */
+  color: var(--clr-white-100);
   padding: 18px;
   border-radius: 12px;
 }
@@ -143,11 +161,13 @@ img {
   margin-bottom: 24px;
   font-size: 18px;
   line-height: 1.7;
-  color: #e6fcf5;
+  /* color: #e6fcf5; */
+  color: var(--clr-green-100);
 }
 
 .testimonial-author {
-  color: #c3fae8;
+  /* color: #c3fae8; */
+  color: var(--clr-green-200);
 }
 
 /* CHAIRS */
@@ -188,7 +208,8 @@ h3 {
 }
 
 .chair-icon {
-  stroke: #087f5b;
+  /* stroke: #087f5b; */
+  stroke: var(--clr-green-400);
   width: 24px;
   height: 24px;
 }
@@ -203,5 +224,6 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
-  color: #495057;
+  /* color: #495057; */
+  color: var(--clr-gray-200);
 }
